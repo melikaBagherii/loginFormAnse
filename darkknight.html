@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="secondpageStyle.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Vazirmatn:wght@100;200;300;400&display=swap" rel="stylesheet">
+        <title>Movie reviews and trailers/shawshank</title>
+    </head>
+    <body>
+        <header style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(darkknight-header.jpg);">
+            <img src="darkknight-poster.jpg" alt="dark knight poster">
+            <div class="row">
+                <p class="movie-info">
+                    Director: Christopher Nolan<br>
+                    IMDB Rate: 9.0
+                </p>
+                <!--<img src="star.png" alt="star logo" class="logo"> -->
+            </div>
+        </header>
+        
+        <section class="section-movies">
+            <div class="row">
+                <div class="col span 1-of-2 box">
+                    <video width="900" height="500" id="videoPlayer" controls></video>
+                </div>
+                <script src="cdnjs/dash.all.min.js"></script>
+                <script>
+                    (function(){
+                        var url = "https://arminaimdb.arvanvod.com/M1nzLnvWOG/o7KJ9MJ9aY/h_,108_200,182_400,272_436,k.mp4.list/manifest.mpd";
+                        var player = dashjs.MediaPlayer().create();
+                        player.initialize(document.querySelector("#videoPlayer"), url, true);
+                    })();
+                </script>
+                <div class="col span 2-of-2 box">
+                    <h1>Summery</h1>
+                    <p class="paragraph">
+                        Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as "The Joker" appears in Gotham, creating a new wave of chaos. Batman's struggle against The Joker becomes deeply personal, forcing him to "confront everything he believes" and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

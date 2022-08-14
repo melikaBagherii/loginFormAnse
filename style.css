@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Noto+Sans+Arabic:wght@300;400;700&family=Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat","Noto Sans Arabic","Vibes";
+
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("login.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+}
+.box{
+    border-radius: 20px;
+    width: 500px;
+    padding: 30px;
+   
+    background-color: rgba(0,0,0,0.4);
+    box-shadow :  2px 1px 2px #ffc400ef;
+    display:flex;
+    flex-direction:column;
+}
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}
+
+.username,
+.password{
+    position: relative;
+    
+}
+label{
+    font-weight: 700;
+    color: #ffc400ca;
+}
+
+.fa-envelope, .fa-lock-open{
+    position: absolute;
+    left: 25px;
+    top: 55px;
+    color: white;
+
+}
+::placeholder{
+    font-family:"Montserrat","Noto Sans Arabic","Vibes";
+}
+
+button{
+    font-family:"Montserrat","Noto Sans Arabic","Vibes";
+}
+
+.box input[type="text"],
+.box input[type="password"]{
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    background: none;
+    display: block;
+    /* margin: 20px auto; */
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 420px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: all .2s ease-in;
+
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus{
+    width: 440px;
+    border-color: #ffc400ef;
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn{
+    border: 0;
+    background: none;
+    border: 3px solid #ffc400ec;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 9px 35px;
+    font-size: 18px;
+    color: white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    border-radius: 24px;
+
+}
+
+#btn:hover{
+    background-color: #ffc400ca;
+}
